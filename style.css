@@ -1,0 +1,166 @@
+main {
+    display: flex;
+}
+
+main #sidebar {
+    width: 20% !important;
+}
+
+main #sidebar-hosting {
+    width: 20% !important;
+}
+
+main #sidebar-domeny {
+    width: 20% !important;
+}
+
+#sidebar {
+    height: 113vh;
+}
+
+#sidebar-hosting {
+    height: 261vh;
+}
+
+#sidebar-domeny {
+    height: 364vh;
+}
+
+
+.header-img {
+    width: 80vw;
+    height: 400px;
+    position: relative;
+}
+
+.header-img-temat {
+    width: 80vw;
+    height: 750px;
+    position: relative;
+}
+
+.identyfikator {
+    color: white;
+    position: absolute;
+    top: 13%;
+    left: 45%;
+    font-size: 5rem;
+    border-bottom: 10px solid yellow;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.identyfikator-temat {
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    font-size: 5rem;
+    border-bottom: 10px solid yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 350px;
+    text-align: center;
+}
+
+#header-content {
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 1.2rem;
+    justify-content: space-evenly;
+}
+
+.mapa-okolic-szkoly {
+    width: 500px;
+}
+
+.mem img {
+    width: 500px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: yellow;
+    color: black;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    background-color: yellow;
+    height: 64px;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.temat {
+    font-weight: 700;
+    color: rgb(52, 43, 43);
+    background-color: yellow;
+    padding: 20px 0 20px 50px;
+    font-size: 2rem;
+}
+
+.square {
+    list-style-type: square;
+}
+
+.fas{
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.notatka{
+    text-align: justify;
+    width: 80vw;
+    padding: 10px 40px 10px 20px;
+}
+
+#offerts {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#offerts a {
+    color: black;
+    opacity: 0.9;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+#offerts a:hover {
+    color: black;
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.podpunkty {
+    font-size: 1.35rem;
+    margin-top: 5px;
+}
+
+.domena {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.domeny-usuniete {
+    text-align: center;
+}
+
+.domeny-usuniete a {
+    color: black;
+    opacity: 0.9;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.domeny-usuniete a:hover {
+    color: black;
+    opacity: 1;
+    text-decoration: underline;
+}
