@@ -4,6 +4,10 @@ main {
 
 main #sidebar {
     width: 20% !important;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 main #sidebar-hosting {
@@ -14,27 +18,14 @@ main #sidebar-domeny {
     width: 20% !important;
 }
 
-#sidebar {
-    height: 113vh;
-}
-
-#sidebar-hosting {
-    height: 261vh;
-}
-
-#sidebar-domeny {
-    height: 364vh;
-}
-
-
 .header-img {
-    width: 80vw;
+    width: 79.3vw;
     height: 400px;
     position: relative;
 }
 
 .header-img-temat {
-    width: 80vw;
+    width: 79.3vw;
     height: 750px;
     position: relative;
 }
@@ -58,6 +49,18 @@ main #sidebar-domeny {
     border-bottom: 10px solid yellow;
     font-family: Arial, Helvetica, sans-serif;
     width: 350px;
+    text-align: center;
+}
+
+.identyfikator-temat-boxmodel {
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    font-size: 5rem;
+    border-bottom: 10px solid yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 800px;
     text-align: center;
 }
 
@@ -92,6 +95,7 @@ footer {
     padding: 20px;
     font-weight: 700;
     font-size: 1.2rem;
+    width: 79.3vw;
 }
 
 .temat {
@@ -100,6 +104,7 @@ footer {
     background-color: yellow;
     padding: 20px 0 20px 50px;
     font-size: 2rem;
+    width: 79.3vw;
 }
 
 .square {
@@ -113,8 +118,50 @@ footer {
 
 .notatka{
     text-align: justify;
-    width: 80vw;
+    width: 79.3vw;
     padding: 10px 40px 10px 20px;
+}
+
+.notatka a {
+    color: black;
+    opacity: 0.9;
+    text-decoration: none;
+}
+.notatka a:hover {
+    color: black;
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.blog {
+    width: 70vw;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+.srodekzdj {
+    display: block;
+    margin: 0 auto 50px auto;
+}
+
+.srodek {
+    text-align: center;
+}
+
+.podział img {
+    padding: 0 50px 0 0;
+    width: 250px;
+}
+.podział {
+    display: flex;
+    justify-content: center;
+}
+
+.podział2 {
+    display: flex;
+    justify-content: center;
+}
+.podział2 img {
+    padding: 0 50px 0 0;
 }
 
 #offerts {
@@ -163,4 +210,417 @@ footer {
     color: black;
     opacity: 1;
     text-decoration: underline;
+}
+
+
+
+@media (max-width: 1400px) {
+    .header-img {
+        width: 79.3vw;
+        height: 400px;
+    }
+    .header-img-temat {
+        width: 78.9vw;
+        height: 550px;
+    }
+    .identyfikator-temat-boxmodel {
+        top: 20%;
+        left: 45%;
+        font-size: 4rem;
+        width: 550px;
+    }
+    .identyfikator-temat {
+        top: 20%;
+        left: 50%;
+        font-size: 4rem;
+        width: 350px;
+    }
+    .notatka{
+        width: 78.9vw;
+    }
+    .temat {
+        width: 78.9vw;
+    }
+    footer {
+        font-size: 1.2rem;
+        width: 78.9vw;
+    }
+    #offerts {
+        display: block !important;
+    }
+    #header-content {
+        display: block !important;
+        margin: 0 auto 0 auto;
+        padding: 0 auto 0 auto;
+    }
+    .mapa-okolic-szkoly {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header-img {
+        width: 78.5vw;
+        height: 400px;
+    }
+    .header-img-temat {
+        width: 78.5vw;
+        height: 550px;
+    }
+    .identyfikator {
+        top: 15%;
+        left: 45%;
+        font-size: 3.5rem;
+    }
+    .identyfikator-temat-boxmodel {
+        top: 20%;
+        left: 45%;
+        font-size: 3.5rem;
+        width: 500px;
+    }
+    .identyfikator-temat {
+        top: 20%;
+        left: 50%;
+        font-size: 3.5rem;
+        width: 350px;
+    }
+    .notatka{
+        width: 78.5vw;
+    }
+    .temat {
+        width: 78.5vw;
+        font-size: 1.7rem;
+    }
+    footer {
+        font-size: 1rem;
+        width: 78.5vw;
+    }
+    .podpunkty {
+        font-size: 1.3rem;
+    }
+    .podział2 img {
+        width: 450px;
+    }
+}
+@media (max-width: 1100px) {
+    .header-img {
+        width: 78.3vw;
+        height: 400px;
+    }
+    .header-img-temat {
+        width: 78.2vw;
+        height: 470px;
+    }
+    .identyfikator {
+        top: 15%;
+        left: 45%;
+        font-size: 3rem;
+    }
+    .identyfikator-temat-boxmodel {
+        top: 20%;
+        left: 45%;
+        font-size: 3rem;
+        width: 400px;
+    }
+    .identyfikator-temat {
+        top: 20%;
+        left: 50%;
+        font-size: 3rem;
+        width: 230px;
+    }
+    .notatka{
+        width: 78.2vw;
+    }
+    .temat {
+        width: 78.5vw;
+        font-size: 1.7rem;
+    }
+    footer {
+        font-size: 1rem;
+        width: 78.5vw;
+    }
+    .podpunkty {
+        font-size: 1.3rem;
+    }
+    .podział2 img {
+        width: 480px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .fa-solid, .fas {
+        font-size: 0.0001rem;
+    }
+    #sidebar {
+        font-size: 0.9rem;
+    }
+    .fs-4 {
+        font-size: 1.2rem !important;
+    }
+    .domeny-usuniete img {
+        width: 80%;
+    }
+}
+@media (max-width: 1005px) {
+    .header-img {
+        width: 78vw;
+        height: 400px;
+    }
+    .identyfikator {
+        top: 15%;
+        left: 45%;
+        font-size: 2.7rem;
+    }
+    .header-img-temat {
+        width: 78.2vw;
+        height: 470px;
+    }
+    .identyfikator-temat-boxmodel {
+        top: 20%;
+        left: 45%;
+        font-size: 3rem;
+        width: 400px;
+    }
+    .identyfikator-temat {
+        top: 20%;
+        left: 50%;
+        font-size: 3rem;
+        width: 230px;
+    }
+    .notatka{
+        width: 78.2vw;
+    }
+    .temat {
+        width: 78.5vw;
+        font-size: 1.7rem;
+    }
+    footer {
+        font-size: 1rem;
+        width: 78.5vw;
+    }
+    .podpunkty {
+        font-size: 1.3rem;
+    }
+    .podział2 img {
+        width: 480px;
+        margin-bottom: 10px;
+    }
+    .podział {
+        display: block !important;
+    }
+    .podział img {
+        margin-bottom: 10px;
+    }
+    .podział2 {
+        display: block !important;
+        justify-content: center;
+    }
+    .nav-link {
+        text-align: left !important;
+    }
+}
+
+@media (max-width: 880px) {
+    .header-img {
+        width: 78vw;
+        height: 350px;
+    }
+    iframe {
+        width: 400px;
+        height: 400px;
+    }
+    .mem img {
+        width: 400px;
+        height: 400px;
+    }
+    .header-img-temat {
+        width: 78vw;
+        height: 400px;
+    }
+    .identyfikator-temat-boxmodel {
+        top: 15%;
+        left: 45%;
+        font-size: 2.5rem;
+        width: 350px;
+    }
+    .identyfikator-temat {
+        top: 15%;
+        left: 50%;
+        font-size: 2.5rem;
+        width: 200px;
+    }
+    .notatka{
+        width: 78vw;
+    }
+    .temat {
+        width: 78vw;
+        font-size: 1.4rem;
+    }
+    footer {
+        font-size: 1rem;
+        width: 78vw;
+    }
+    .podpunkty {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 735px) {
+    .header-img {
+        width: 77.3vw;
+        height: 300px;
+    }
+    .identyfikator {
+        top: 12%;
+        left: 45%;
+        font-size: 2.3rem;
+    }
+    .header-img-temat {
+        width: 77.6vw;
+        height: 400px;
+    }
+    .identyfikator-temat-boxmodel {
+        top: 15%;
+        left: 45%;
+        font-size: 2rem;
+        width: 300px;
+    }
+    .identyfikator-temat {
+        top: 15%;
+        left: 50%;
+        font-size: 2rem;
+        width: 170px;
+    }
+    .notatka{
+        width: 77.6vw;
+    }
+    .temat {
+        width: 77.6vw;
+        font-size: 1.3rem;
+    }
+    footer {
+        font-size: 1rem;
+        width: 77.6vw;
+    }
+    .podpunkty {
+        font-size: 1.1rem;
+    }
+    .blog {
+        display: none;
+    }
+    .srodekzdj {
+        margin: 0 auto 15px auto;
+        width: 90%;
+    }
+}
+
+@media (max-width: 680px) {
+    .header-img {
+        width: 77vw;
+        height: 300px;
+    }
+    #header-content {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .gmap_canvas {
+        width: 300px;
+        height: 300px;
+    }
+    .mem img {
+        width: 300px;
+        height: 300px;
+    }
+    .header-img-temat {
+        width: 77.2vw;
+        height: 300px;
+    }
+    .identyfikator-temat-boxmodel {
+        top: 15%;
+        left: 45%;
+        font-size: 1.8rem;
+        width: 250px;
+    }
+    .identyfikator-temat {
+        top: 13%;
+        left: 50%;
+        font-size: 1.8rem;
+        width: 150px;
+    }
+    .notatka{
+        width: 77.2vw;
+    }
+    .temat {
+        width: 77.2vw;
+        font-size: 1.3rem;
+    }
+    footer {
+        font-size: 1rem;
+        width: 77.2vw;
+    }
+    .podpunkty {
+        font-size: 1.1rem;
+    }
+    .blog {
+        display: none;
+    }
+    .srodekzdj {
+        margin: 0 auto 15px auto;
+        width: 90%;
+    }
+    .podział2 img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-img {
+        width: 77vw;
+        height: 250px;
+    }
+    #header-content {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .mem img {
+        width: 200px;
+        height: 200px;
+    }
+    .gmap_canvas {
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 250px;
+        height: 250px;
+        position: relative;
+    }
+    iframe {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top: -25;
+        left: 0;
+    }
+    .identyfikator {
+        top: 10%;
+        font-size: 1.5rem;
+    }
+    .header-img-temat {
+        width: 77.2vw;
+        height: 250px;
+    }
+    .identyfikator-temat-boxmodel {
+        top: 12%;
+        left: 45%;
+        font-size: 1.5rem;
+        width: 200px;
+    }
+    .identyfikator-temat {
+        top: 10%;
+        left: 50%;
+        font-size: 1.5rem;
+        width: 130px;
+    }
+    main #sidebar {
+        width: 20% !important;
+    }
 }

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Wirtualny zeszyt • CSS - Box Model </title>
+    <link rel="shortcut icon" href="https://deseret.brightspotcdn.com/dims4/default/9ec73ef/2147483647/strip/true/crop/512x512+0+0/resize/300x300!/format/webp/quality/90/?url=https%3A%2F%2Fcdn.vox-cdn.com%2Fthumbor%2FMMJUtfig5uMFYv7rPaK8feTEVtM%3D%2F512x512%2Fcdn.vox-cdn.com%2Fauthor_profile_images%2F193003%2Flarge.0.png" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <div id="sidebar" class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 300px;">
+        <a href="index.html" class="d-flex align-items-center mb-0 mb-md-0 me-md-0 link-dark text-decoration-none">
+          <i class="fas fa-book"></i>
+          <span class="fs-4">Wirtualny Zeszyt</span>
+        </a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link link-dark" aria-current="page">
+              <i class="fa-solid fa-house"></i>
+              Strona główna
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="hosting.html" class="nav-link link-dark">
+              Hosting
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="domeny.html" class="nav-link link-dark">
+              Domeny
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="css-box_model.html" class="nav-link active">
+              CSS - Box Model
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link link-dark">
+              <!-- Inny temat2 -->
+            </a>
+          </li>
+        </ul>
+        <hr>
+        <div class="dropdown">
+          <a href="#" class="d-flex align-items-center link-dark text-decoration-none" id="dropdownUser2" data-bs-toggle="" aria-expanded="false">
+            <img src="https://deseret.brightspotcdn.com/dims4/default/9ec73ef/2147483647/strip/true/crop/512x512+0+0/resize/300x300!/format/webp/quality/90/?url=https%3A%2F%2Fcdn.vox-cdn.com%2Fthumbor%2FMMJUtfig5uMFYv7rPaK8feTEVtM%3D%2F512x512%2Fcdn.vox-cdn.com%2Fauthor_profile_images%2F193003%2Flarge.0.png" alt="" width="32" height="32" class="rounded-circle me-2">
+            <strong>ZSEEiM 1TP 24</strong>
+          </a>
+        </div>
+      </div>
+      <div id="header">
+        <img class="header-img-temat" src="https://images.squarespace-cdn.com/content/v1/5b8039185ffd20f395134f6a/1536771417733-W7DWP4GWVVIDRFB748R3/administration.jpg?format=2500w" alt="">
+        <p class="identyfikator-temat-boxmodel">CSS - Box Model</p>
+        <div id="lekcja">
+          <div class="temat">CSS - Box Model</div>
+          <div class="notatka">
+            <ol>
+              <li class="podpunkty">Czym jest model pudełkowy CSS?</li>
+                <p>Model pudełkowy (Box model) to "pudełko", które owija się wokół każdego elementu HTML. Wykorzystując go możemy sterować wyglądem i układem całej naszej strony. Model pudełkowy pozwala nam precyzyjnie określić wymiary elementu HTML na stronie. Każdy element, np. div i paragraf, można potraktować jak swego rodzaju prostokąt z określonymi wymiarami (możemy sami je określić lub przyjmą one wartość auto, czyli będą zajmować tyle miejsca ile potrzebują). Box Model składa się następująco z: zawartości "pudełka" (content box), marginesu wewnętrznego (padding), obramowania (border) i marginesu zewnętrznego (margin). Każdemu z tych pól możemy ustalić własne wartości, np. margin: 10px, border: 1px solid black, padding: 5px, width: 500px. Jeśli tego nie zrobimy przyjmą następujące wartości: margin: 0, border: 0 px black, padding: 0, width: auto. Gdyby nie Box Model strony internetowe wyglądałyby sztywno, każdy element byłby "przyklejony" do siebie, nie byłoby żadnych odstępów między elementami.</p>
+                <p><u><i>Przykład:</i></u></p>
+                <p><i>Tworzymy  3 divy na wzór strony blogowej: <a href="https://codepen.io/danekkkk/pen/WNMwNep" target="_blank">[Kliknij mnie]</a> Ustawiamy margin: 0 i padding: 0 w body. oraz jakieś kolory dla naszych pudełek by je odróznić. Jak można zauważyć nasze pudełka są "przyklejone do siebie". Oprócz width nie mają żadnego elementu modelu pudełkowego.</i></p>
+                <img class="blog" src="https://lh3.googleusercontent.com/T96tqx2skojwaNpHNhD22cy5VZoUM0WDJ9SQFf9mpVaAx7fibu9hdsh5dZPHyxgn6FJkrfXWNKdmg87bRnRw4QATwCztroXUpvY-1qfwHtKHJSETAPFzQ9JIJyOL5Dor=w1280" alt="">
+                <p><i>Dodając elementom właściwości box model, np. border, padding i margin możemy zmienić nasz wygląd strony nie do poznania, np. oddzielić treść blogu od stopki strony i nawigacji. <a href="https://codepen.io/danekkkk/pen/poayojp" target="_blank">[Kliknij mnie]</a></i></p>
+                <img class="blog" src="https://lh3.googleusercontent.com/DrRseC33NyG97NO9-1DJLWg2JxQYrOmmFnCkXflQgLNr2C4RrXqglDGmp4kcLSyF_6hCUkLT1uFmuT21o8j0zaYfc0EPZ5PinTvK7lHY5ZWTF-4rRHVGHtONHCwwrdaxJg=w1280" alt="">
+                <p><i>Dodając to kolejne właściwości CSS możemy zrobić podstawową stronę blogową. <br>
+                  <a href="https://codepen.io/danekkkk/pen/wvyGvMg" target="_blank">[Kliknij mnie]</a><br>
+                  <a href="https://codepen.io/danekkkk/pen/gOvrOrr" target="_blank">[Kliknij mnie]</a>- Jak widać atrybut <u>a</u> również należy do modelu pudełkowego, tak więc, jemu też możemy dodać margin, padding, border. <br>
+                  <a href="https://codepen.io/danekkkk/pen/BaYKaLp" target="_blank">[Kliknij mnie]</a>
+                </i></p>
+              <li class="podpunkty">Graficzny przykład modelu pudełkowego i jego opis</li>
+                <p class="srodek"><i><a href="https://codepen.io/danekkkk/pen/JjpXjLP" target="_blank">[Kliknij mnie]</a></i></p>
+                <img class="srodekzdj" src="https://lh5.googleusercontent.com/ECv0TWfpFiuTqvRXIl8lATrGua0YZT7Be3dEGu6ocFCF9qYxRmLM-_Pgnb0OXVVWMWJx8wGAYfcrX8Lmcd0EtC7jS0Jn-ZZDsc8RfI6dPGRo7x7R7bDuE0USUnF5gRt3oQ=w1280" alt="">
+                <div class="podział">
+                  <img src="https://lh3.googleusercontent.com/LTXvWUv6kpPrWwNLFr7BIbp8cvIZQ7uxmUL-kVwFRayFOudha0OyYmDmxeaKVvqzfoXjr5DGiRDrkmwHGDa0uEgq9bC0W8UXmC0kDOOiNMtqDTC7ENnMl6L8EJ8nqTf9mQ=w1280" alt="">
+                  <p><b>Model pudełkowy żółtego diva</b><br>Jak widać, ma on ustawioną długość (25% strony) i wysokość (50px).</p>
+                </div><br>
+                <div class="podział">
+                  <img src="https://lh6.googleusercontent.com/iXbiKiHsdVLcnZe1gr1T6gtxWjRqz4NC3j1uvGjtSpKgdLD85hJl-TlWMsGgfmnWBL5KXkqR_NgsyXULSMx-uKAbGOm0R35cYsj3T-fbuDwYsFWB-iVBwmdAHU96YyGMtA=w1280" alt="">
+                  <p><b>Model pudełkowy zielonego diva</b><br>Jak widać, ma on ustawioną długość (25% strony), wysokość (50px), <br> padding (15px 10px 0 10px), border (3px) i margin (20px).</p>
+                </div>
+                <hr class="yellow">
+                <p>W modelu pudełkowym wyróżniamy 4 elementy:</p>
+                  <ul class="square">
+                    <li>Content box - zawartość pudełka, w którym pojawia się, np. tekst i obrazy,</li>
+                    <li>Border - obramowanie, które otacza zawartość,</li>
+                    <li>Padding - określa odstęp zawartości od obramowania (jest przezroczysty),</li>
+                    <li>margin - określa odstęp całego modelu pudełkowego od innego elementu (jest przezroczysty).</li>
+                  </ul>
+              <li class="podpunkty">Przykład użycia "margin", "padding" i "border"</li>
+                <p class="srodek"><i><a href="https://codepen.io/danekkkk/pen/JjpXjLP" target="_blank">[Kliknij mnie]</a></i></p>
+                <div class="podział2">
+                  <img src="https://lh5.googleusercontent.com/ECv0TWfpFiuTqvRXIl8lATrGua0YZT7Be3dEGu6ocFCF9qYxRmLM-_Pgnb0OXVVWMWJx8wGAYfcrX8Lmcd0EtC7jS0Jn-ZZDsc8RfI6dPGRo7x7R7bDuE0USUnF5gRt3oQ=w1280" alt="">
+                  <ul class="square"><i>Użycie:</i>
+                    <li>margin: zielony div jest odsunięty od żółtego diva,</li>
+                    <li>padding: zawartość zielonego diva jest odsunięta od obramowania,</li>
+                    <li>border: widać czarne obramowanie na zielonym divie.</li>
+                  </ul>
+                </div>
+              <li class="podpunkty">Za co odpowiada parametr css box-sizing?</li>
+                <p>Domyślnie model pudełkowy działa w taki sposób, że jeżeli dla pudełka o zadeklarowanej przez nas wysokości i szerokości (np. 200px) dodamy border (5px) i padding (5px) to nasz kwadrat, będzie miał:</p>
+                <ul class="square">
+                  <li>szerokość = 220px, ponieważ musimy dodać 5px borderu i 5px paddingu z lewej oraz 5px borderu i 5px paddingu z prawej,</li>
+                  <li>wysokość = 220px, ponieważ musimy dodać 5px borderu i 5px paddingu z góry oraz 5px borderu i 5px paddingu z dołu.</li>
+                </ul><br>
+                <p><u><i>Jest na to sposób:</i></u></p>
+                <p>Aby nasz kwadrat miał szerokość i wysokość równą 200px musielibyśmy ustawić szerokość i wysokość na 180px (bo 200px -5px borderu -5px paddingu z lewej/góry oraz -5px borderu -5px paddingu z prawej/dołu).</p>
+                <p><u><i>Jest jednak łatwiejsze rozwiązanie:</i></u></p>
+                <p>Wystarczy, że dopiszemy: box-sizing: border-box (domyślnie jest: box-sizing: content-box). Własność ta powoduje, że padding i border będą automatycznie wliczane do ustalonej przez nas szerokości/wysokości.</p>
+                <p><u><i>Przykłady:</i></u></p>
+                <p><i><a href="https://codepen.io/danekkkk/pen/ZErWENZ" target="_blank">[Kliknij mnie]</a></i></p>
+                <p><i><a href="https://codepen.io/danekkkk/pen/vYdGEEm" target="_blank">[Kliknij mnie]</a></i></p>
+
+            </ol>
+        </div>
+        <footer>
+            <p>Wszelkie prawa zastrzeżone</p>
+        </footer>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
